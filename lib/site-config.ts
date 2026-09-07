@@ -1,12 +1,12 @@
 // Edit this file to update the phone number, address and default WhatsApp message.
 // WhatsApp number MUST be in international format, digits only, no + or spaces.
 // Example for Pakistan: 92 300 1234567  ->  923001234567
-export const WHATSAPP_NUMBER = "923001234567";
+export const WHATSAPP_NUMBER = "923044476333";
 export const WHATSAPP_DEFAULT_MESSAGE =
   "Assalam-o-Alaikum, mujhe Umer Child & Mother Care Complex mein appointment lena hai.";
 
 export const CLINIC_ADDRESS = "Main Boulevard, Model Town, Lahore, Punjab, Pakistan";
-export const CLINIC_PHONE = "+92 300 123 4567";
+export const CLINIC_PHONE = "+92 304 447 6333";
 export const CLINIC_EMAIL = "info@umerchildcare.com";
 export const CLINIC_HOURS_WEEKDAY = "Mon – Sat: 5:00 PM – 10:00 PM";
 export const CLINIC_HOURS_SUNDAY = "Sunday: 4:00 PM – 8:00 PM";
