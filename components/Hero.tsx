@@ -52,6 +52,11 @@ export default function Hero() {
           <motion.p variants={item} className="mb-4 font-display text-lg italic text-magenta">
             Two lives, one gentle hand
           </motion.p>
+          <motion.p variants={item} className="mb-4 text-sm font-medium text-ink/70">
+  Dr. Waqas Ali — CEO
+  <br />
+  Dr. Nabiha Waqas — Director
+</motion.p>
 
           <h1 className="font-display text-[2.6rem] leading-[1.15] text-plum sm:text-6xl">
             <WordReveal text="Care that grows" delay={0.5} />

@@ -5,7 +5,7 @@ export const WHATSAPP_NUMBER = "923044476333";
 export const WHATSAPP_DEFAULT_MESSAGE =
   "Assalam-o-Alaikum, mujhe Umer Child & Mother Care Complex mein appointment lena hai.";
 
-export const CLINIC_ADDRESS = "Main Boulevard, Model Town, Lahore, Punjab, Pakistan";
+export const CLINIC_ADDRESS = "Jump Wali Pull, Near Total Petrol Pump, Fisheries Complex, Manawan, Lahore";
 export const CLINIC_PHONE = "+92 304 447 6333";
 export const CLINIC_EMAIL = "info@umerchildcare.com";
 export const CLINIC_HOURS_WEEKDAY = "Mon – Sat: 5:00 PM – 10:00 PM";

@@ -21,14 +21,13 @@ export default function Contact() {
 
       <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
         <Reveal className="overflow-hidden rounded-3xl border border-plum/10">
-          <iframe
-            title="Complex location"
-            src={`https://www.google.com/maps?q=${encodeURIComponent(
-              "Umer Child & Mother Care Complex"
-            )}&output=embed`}
-            className="h-[320px] w-full md:h-full"
-            loading="lazy"
-          />
+         <iframe
+  title="Complex location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.6250371232018!2d74.46546811436255!3d31.59275241486757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191143d3125c7b%3A0x20eda57bd082c12c!2sFisheries%20Complex%2C%20Manawan%2C%20Lahore!5e0!3m2!1sen!2s!4v1789154447464!5m2!1sen!2s"
+  className="h-[320px] w-full md:h-full"
+  loading="lazy"
+  referrerPolicy="strict-origin-when-cross-origin"
+/>
         </Reveal>
 
         <Reveal delay={0.1} className="flex flex-col justify-between rounded-3xl bg-blush/70 p-9">

@@ -14,8 +14,8 @@ import {
 
 // TODO: replace the remaining two team members with your real doctors' names & specialties.
 const teamDoctors = [
-  { name: "Dr. Ayesha Malik", role: "Consultant Gynecologist", initials: "AM" },
-  { name: "Dr. Sana Rafiq", role: "Obstetrics & Antenatal Care", initials: "SR" },
+  { name: "Dr. Waqas Ali", role: "CEO", initials: "WA" },
+  { name: "Dr. Nabiha Waqas", role: "Director", initials: "NW" },
 ];
 
 const certifications = [
