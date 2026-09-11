@@ -52,11 +52,16 @@ export default function Hero() {
           <motion.p variants={item} className="mb-4 font-display text-lg italic text-magenta">
             Two lives, one gentle hand
           </motion.p>
-          <motion.p variants={item} className="mb-4 text-sm font-medium text-ink/70">
-  Dr. Waqas Ali — CEO
-  <br />
-  Dr. Nabiha Waqas — Director
-</motion.p>
+         <motion.div variants={item} className="mb-5 flex flex-wrap items-center gap-3">
+  <span className="inline-flex items-center gap-1.5 rounded-full bg-white/70 px-4 py-1.5 text-[13px] font-semibold text-plum shadow-sm ring-1 ring-plum/10">
+    Dr. Waqas Ali
+    <span className="text-magenta">· CEO</span>
+  </span>
+  <span className="inline-flex items-center gap-1.5 rounded-full bg-white/70 px-4 py-1.5 text-[13px] font-semibold text-plum shadow-sm ring-1 ring-plum/10">
+    Dr. Nabiha Waqas
+    <span className="text-magenta">· Director</span>
+  </span>
+</motion.div>
 
           <h1 className="font-display text-[2.6rem] leading-[1.15] text-plum sm:text-6xl">
             <WordReveal text="Care that grows" delay={0.5} />
