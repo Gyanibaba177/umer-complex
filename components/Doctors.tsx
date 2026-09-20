@@ -12,17 +12,49 @@ import {
   DOCTOR_RATING_LABEL,
 } from "@/lib/site-config";
 
-// TODO: replace the remaining two team members with your real doctors' names & specialties.
 const teamDoctors = [
-  { name: "Dr. Waqas Ali", role: "CEO", initials: "WA" },
-  { name: "Dr. Nabiha Waqas", role: "Director", initials: "NW" },
+  {
+    name: "Dr. Nabiha Waqas",
+    role: "Gynaecologist & Obstetrician",
+    quals: "MBBS, FCPS",
+    note: "Assistant Professor, Ghurki Trust Teaching Hospital Lahore",
+    initials: "NW",
+  },
+  {
+    name: "Dr. Fahad Liaqat",
+    role: "Consultant Cardiologist",
+    quals: "MBBS, FCPS (Cardiology)",
+    note: "Assistant Professor, University of Lahore",
+    initials: "FL",
+  },
+  {
+    name: "Dr. M. Akram",
+    role: "Diagnostic Radiologist",
+    quals: "MBBS, MCPS",
+    note: "Ultrasound & diagnostic imaging",
+    initials: "MA",
+  },
+  {
+    name: "Dr. M. Usama Islam",
+    role: "Consultant Sports Physiotherapist",
+    quals: "DPT (Gulab Devi Hospital), MS-SPT (RIU)",
+    note: "Rehabilitation & physical therapy",
+    initials: "UI",
+  },
+  {
+    name: "Sana Hassan",
+    role: "Consultant Clinical Psychologist",
+    quals: "BSCP, MSCP, CBT & DBT Certified",
+    note: "Behavioral and Educational Therapist",
+    initials: "SH",
+  },
 ];
 
 const certifications = [
-  "Certified in Newborn & Neonatal Care",
-  "Expert in childhood nutrition & allergies",
-  "Member, Pakistan Paediatric Association",
-  "Speaker at national paediatric conferences",
+  "FCPS Paediatrician, PGPN (USA) certified",
+  "Associate Professor, Ghurki Trust Teaching Hospital Lahore",
+  "Expert in newborn, neonatal & child nutrition care",
+  "MBBS, RMP, DCH — over a decade of paediatric practice",
 ];
 
 const expertise = [
@@ -142,15 +174,19 @@ export default function Doctors() {
       </Reveal>
 
       {/* Rest of the team */}
-      <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <div className="mt-10 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
         {teamDoctors.map((d, i) => (
-          <Reveal key={d.name} delay={i * 0.1}>
-            <div className="rounded-3xl bg-blush/70 p-8 text-center">
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-magenta font-display text-2xl text-white">
+          <Reveal key={d.name} delay={i * 0.08}>
+            <div className="flex h-full flex-col items-center rounded-3xl bg-blush/70 p-8 text-center transition-shadow hover:shadow-[0_18px_40px_-24px_rgba(94,26,72,0.5)]">
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-magenta font-display text-2xl text-white shadow-lg shadow-magenta/25">
                 {d.initials}
               </div>
               <h3 className="mt-5 font-display text-xl text-plum">{d.name}</h3>
-              <p className="mt-1 text-sm text-ink/65">{d.role}</p>
+              <p className="mt-1.5 text-sm font-semibold text-magenta">{d.role}</p>
+              <p className="mt-2 text-[13px] leading-relaxed text-ink/65">{d.quals}</p>
+              <p className="mt-3 border-t border-plum/10 pt-3 text-[12.5px] leading-relaxed text-ink/55">
+                {d.note}
+              </p>
             </div>
           </Reveal>
         ))}
