@@ -13,7 +13,7 @@ export const CLINIC_HOURS_SUNDAY = "Sunday: 4:00 PM – 8:00 PM";
 export const CLINIC_HOURS = `${CLINIC_HOURS_WEEKDAY} · ${CLINIC_HOURS_SUNDAY}`;
 
 // Doctor spotlight — used in the Doctors section.
-export const DOCTOR_NAME = "Dr. Bilal Umer";
+export const DOCTOR_NAME = "Dr. Waqas Ali";
 export const DOCTOR_ROLE = "Consultant Pediatrician, Umer Child & Mothercare";
 export const DOCTOR_RATING = "4.9 / 5";
 export const DOCTOR_RATING_LABEL = "from loving parents";
